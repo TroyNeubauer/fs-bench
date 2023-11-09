@@ -1,0 +1,12 @@
+[package]
+name = "fs-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+criterion = "0.5.1"
+nix = { version = "0.27.1", features = ["dir", "fs"] }
+
+[[bench]]
+name = "basic"
+harness = false
